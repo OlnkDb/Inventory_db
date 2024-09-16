@@ -1,0 +1,27 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+[keybindings]
+  zoom_in = <Alt>minus
+  zoom_out = <Alt>parenright
+  zoom_normal = twosuperior
+  split_horiz = <Alt>dead_circumflex
+  split_vert = <Alt>ugrave
+  close_term = <Alt>a
+  close_window = <Primary><Alt>q
+  resize_up = <Primary><Alt>Up
+  resize_down = <Primary><Alt>Down
+  resize_left = <Primary><Alt>Left
+  resize_right = <Primary><Alt>Right
+[profiles]
+  [[default]]
+    title_transmit_bg_color = "#33d17a"
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]
